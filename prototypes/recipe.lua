@@ -571,11 +571,11 @@ data:extend(
     energy_required = 3,
     ingredients =
     {
-      {type="fluid", name="light-oil", amount=1}	--1
+      {type="fluid", name="light-oil", amount=4}	--1
     },
     results=
     {
-      {type="item", name="solid-fuel", amount=4}
+      {type="item", name="solid-fuel", amount=1}
     },
     icon = "__base__/graphics/icons/solid-fuel-from-light-oil.png",
     subgroup = "fluid-recipes",
