@@ -329,14 +329,16 @@ data:extend(
 
 -- KeepOnBuilding additions:
 
+-- item.lua
   {
-    type = "recipe",
-    name = "stone-brick",
-    category = "smelting",
-    energy_required = 7,	--3.5
-    enabled = true,
-    ingredients = {{"stone", 5}},	--2
-    result = "stone-brick"
+    type = "item",
+    name = "solid-fuel",
+    icon = "__base__/graphics/icons/solid-fuel.png",
+    flags = {"goes-to-main-inventory"},
+    fuel_value = "10MJ",	-- 25
+    subgroup = "raw-resource",
+    order = "c[solid-fuel]",
+    stack_size = 50
   },
 
 -- ammo.lua
@@ -390,6 +392,17 @@ data:extend(
     result = "piercing-shotgun-shell"
   },
 
+-- demo-furnace-recipe.lua
+  {
+    type = "recipe",
+    name = "stone-brick",
+    category = "smelting",
+    energy_required = 7,	--3.5
+    enabled = true,
+    ingredients = {{"stone", 5}},	--2
+    result = "stone-brick"
+  },
+
 --demo-recipe.lua
   {
     type = "recipe",
@@ -432,8 +445,7 @@ data:extend(
     ingredients =
     {
       {"iron-plate", 2},	--1
-      {"iron-gear-wheel", 2},	--1
-      {"stone-furnace", 1}	--0
+      {"iron-gear-wheel", 2}	--1
     },
     result = "burner-inserter"
   },
@@ -551,6 +563,62 @@ data:extend(
       {type="fluid", name="sulfuric-acid", amount=2}	--5
     },
     subgroup = "fluid-recipes"
+  },
+  {
+    type = "recipe",
+    name = "solid-fuel-from-light-oil",
+    category = "chemistry",
+    energy_required = 3,
+    ingredients =
+    {
+      {type="fluid", name="light-oil", amount=1}	--1
+    },
+    results=
+    {
+      {type="item", name="solid-fuel", amount=4}
+    },
+    icon = "__base__/graphics/icons/solid-fuel-from-light-oil.png",
+    subgroup = "fluid-recipes",
+    enabled = false,
+    order = "b[fluid-chemistry]-c[solid-fuel-from-light-oil]"
+  },
+
+  {
+    type = "recipe",
+    name = "solid-fuel-from-petroleum-gas",
+    category = "chemistry",
+    energy_required = 3,
+    ingredients =
+    {
+      {type="fluid", name="petroleum-gas", amount=8}	--2
+    },
+    results=
+    {
+      {type="item", name="solid-fuel", amount=1}
+    },
+    icon = "__base__/graphics/icons/solid-fuel-from-petroleum-gas.png",
+    subgroup = "fluid-recipes",
+    enabled = false,
+    order = "b[fluid-chemistry]-d[solid-fuel-from-petroleum-gas]"
+  },
+
+  {
+    type = "recipe",
+    name = "solid-fuel-from-heavy-oil",
+    category = "chemistry",
+    energy_required = 3,
+    ingredients =
+    {
+      {type="fluid", name="heavy-oil", amount=6}	--2
+    },
+    results=
+    {
+      {type="item", name="solid-fuel", amount=1}
+    },
+    icon = "__base__/graphics/icons/solid-fuel-from-heavy-oil.png",
+    subgroup = "fluid-recipes",
+    enabled = false,
+    order = "b[fluid-chemistry]-e[solid-fuel-from-heavy-oil]"
   },
   {
     type = "recipe",
