@@ -8,15 +8,15 @@ This mod is designed to increase the length and difficulty of the game without c
 * Power generation is more costly and fuel yield are halved.
 * Science costs drastically increased.
 * Most costs are increased, particularly electronics circuits.
-* Electronics circuits changes cause the cost of automation (assembly machines, non burner inserter, electric drills) to be very costly. The player has to weight investments early on.
-* Bitter evolution is unchanged. Since the game is significantly slowed down this means that you'll like need to use gun turrent against spitter and you'll face bitter evolution with less research completed making biters harder.
-* Copper outputs significantly more plates per ore (5 to 1 right now) and copper costs are significantly increases. This will cause significant copper bandwidth issues.
+* Electronics circuits changes cause the cost of automation (assembly machines, non burner inserter, electric drills) to be very costly. The player has to weigh investments early on.
+* Biter evolution is unchanged. Since the game is significantly slowed down this means that you'll like need to use gun turrent against spitter and you'll face biter evolution with less research completed making biters harder.
+* Copper outputs significantly more plates per ore (5 to 1 right now) and copper costs are significantly increased. This will cause significant copper bandwidth issues.
 * Various build times are increased.
 
 Expect the following:
 * The game to take roughly 10 times as long.
 * Burner stage (turrets) can't be skipped.
-* Getting your first research (lab, power) will over an hour.
+* Getting your first research (lab, power) will take over an hour.
 * Higher tier research are very costly.
 * Be forced to use trains.
 
