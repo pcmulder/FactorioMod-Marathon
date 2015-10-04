@@ -413,12 +413,6 @@ data:extend(
   },
   {
     type = "recipe",
-    name = "iron-axe",
-    ingredients = {{"iron-stick", 4}, {"iron-plate", 6}},	--2,3
-    result = "iron-axe"
-  },
-  {
-    type = "recipe",
     name = "basic-transport-belt",
     ingredients =
     {
