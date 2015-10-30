@@ -1,8 +1,16 @@
-all:
-	rm -rf build/
+VERSION := 0.5.4
+NAME := Marathon
+
+all: clean build
+
+build:
 	mkdir build/
-	mkdir build/marathon_0.5.4
-	cp -R LICENSE README.md data.lua info.json prototypes migrations build/marathon_0.5.4
-	cd build && zip -r marathon_0.5.4.zip marathon_0.5.4
+	mkdir build/$(NAME)_$(VERSION)
+	cp info.json info.json.temp
+	sed -i -e 's/@VERSION@/$(VERSION)/' info.json
+	cp -R LICENSE README.md data.lua info.json prototypes migrations build/$(NAME)_$(VERSION)
+	cd build && zip -r $(NAME)_$(VERSION).zip $(NAME)_$(VERSION)
+	mv info.json.temp info.json
+
 clean:
 	rm -rf build/
