@@ -1,5 +1,5 @@
 VERSION := 0.5.4
-NAME := Marathon
+NAME := marathon
 
 all: clean build
 
