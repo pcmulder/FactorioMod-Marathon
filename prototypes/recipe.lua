@@ -731,19 +731,6 @@ data:extend(
   },
   {
     type = "recipe",
-    name = "advanced-circuit",
-    enabled = false,
-    energy_required = 8,
-    ingredients =
-    {
-      {"electronic-circuit", 2},
-      {"plastic-bar", 4},	--2
-      {"copper-cable", 4}
-    },
-    result = "advanced-circuit"
-  },
-  {
-    type = "recipe",
     name = "big-electric-pole",
     enabled = false,
     ingredients =
